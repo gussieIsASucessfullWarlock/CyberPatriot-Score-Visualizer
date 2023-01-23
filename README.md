@@ -1,4 +1,4 @@
-# CyberPatriot Score Scraper
+# CyberPatriot Score Visualizer
 
 ![CyberPatriotImageDiffculty](https://user-images.githubusercontent.com/82612866/213948710-67119820-f4d4-4987-a78b-1ac0274f4e4a.png)
 
