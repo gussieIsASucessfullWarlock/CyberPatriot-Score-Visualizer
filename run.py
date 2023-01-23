@@ -300,8 +300,7 @@ def makeTable(tabledata, ourTeam):
     print(f"Your team has a rank of {rnk}")
     print(end)
 
+teamNumber = input("What is your team number: ")
 data = getData()
-
-teamNumber = os.system("What is your team number: ")
 graph(data, teamNumber)
 makeTable(data, teamNumber)
