@@ -82,7 +82,10 @@ def getData():
                     })
                 cout += 1
             dataToRTN += [{"teamNumber": i, "teamData": data}]
-            os.system("clear")
+            if os.name == 'nt':
+                os.system("cls")
+            else:
+                os.system("clear")
             print("Got", len(team_numbers), "platinum teams.")
             try:
                 print("Getting platinum team", team_numbers[rank + 1], "data. Rank:", rank, end='\r')
@@ -237,7 +240,10 @@ def graph(graphdata, ourTeam):
             plt.title(f'Top {len(graphdata)} Teams Comp. Data')
             # Display the plot
             c += 1
-    os.system("clear")
+    if os.name == 'nt':
+        os.system("cls")
+    else:
+        os.system("clear")
     plt.legend()
     plt.gcf().set_size_inches(12, 9)
     plt.savefig('CyberPatriotImageDiffculty.png', dpi=800)
